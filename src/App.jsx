@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Navbar from './component/navbar';
+import Navbar from './component/Navbar';
 import ProtectedRoute from './component/ProtectedRoute';
 import Movies from './component/Movies';
 import Home from './component/Home';
