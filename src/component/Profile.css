@@ -1,0 +1,180 @@
+.swal2-html-container {
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+}
+.swal2-actions {
+  margin-top: 25px !important;
+}
+
+.cancelbtn{
+    position:relative;
+    height:45px;
+    width:160px;
+    bottom: 160px;
+    left:305px;
+    background-color:red;
+    color:white;
+}
+.cancelbtn:hover{
+    opacity: 0.6;
+    background-color: blue;
+    font-weight: 600;
+}
+.mbutton:hover{
+  opacity: 0.5;
+  border: 2px solid wheat;
+}
+
+
+/*User Details*/
+.user:hover{
+    opacity: 6;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+  min-height: 100vh;
+  color: #fff;
+}
+
+@media screen and (max-width:590px){
+  .profile-container{
+    display: -ms-inline-grid;
+    grid-template-columns: min-content;
+  }
+  .mode-btn{
+    position: relative;
+    left: 200px;
+  }
+}
+.profile-container.light {
+  color: #000;
+  background-color: #f5f5f5;
+}
+
+.profile-card {
+  background-color: rgba(20, 20, 20, 0.95);
+  border-radius: 15px;
+  padding: 40px;
+  width: 450px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  bottom: 50px;
+}
+
+.profile-container.light .profile-card {
+  background-color: white;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+/* Header Section */
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.profile-avatar {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 3px solid #e50914;
+  margin-bottom: 20px;
+}
+.welcome-text {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.mode-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: none;
+  border: none;
+  color: #ccc;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.mode-btn:hover {
+  color: #e50914;
+}
+
+/* Details Section */
+.profile-details {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.profile-details h3 {
+  border-bottom: 2px solid #e50914;
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 23px;
+}
+
+.details-list p {
+  margin: 20px 0;
+  font-size: larger;
+}
+
+.details-list strong {
+  color: #e50914;
+}
+
+/* Actions */
+.profile-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.action-btn {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+  background-color: #b00710;
+  transform: scale(1.05);
+}
+
+.action-btn.logout {
+  background-color: #444;
+}
+
+.action-btn.logout:hover {
+  background-color: #e50914;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .profile-card {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .welcome-text {
+    font-size: 1.2rem;
+  }
+}

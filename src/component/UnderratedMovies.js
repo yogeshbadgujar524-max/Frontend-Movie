@@ -1,0 +1,108 @@
+const UnderratedMovies = [
+  {
+    id: 1,
+    title: "Bramhastra : Part 1",
+    year: 2023,
+    type: "Creatures",
+    price: 100,
+    category: "Underrated",
+    image: "https://resizing.flixster.com/Pqi5P6v8Vu_hAAh3O9edOTpM7H0=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzkzODFmYWI3LTA0OTAtNGZmNy05NGI5LWYzMGUxY2M0NDhkMC5qcGc=",
+    desc: "A young man discovers his mystical connection to a powerful ancient weapon and a hidden world of astras. A mix of fantasy, mythology, and visual spectacle.",
+    director: "Ayan Mukerji",
+    writers: ["Ayan Mukerji", "Hussain Dalal"],
+    stars: ["Ranbir Kapoor", "Alia Bhatt", "Amitabh Bachchan"]
+  },
+  {
+    id: 2,
+    title: "The Dirty Picture",
+    year: 2010,
+    type: "Adult",
+    price: 80,
+    category: "Underrated",
+    image: "https://upload.wikimedia.org/wikipedia/en/2/2c/The_Dirty_Picture2.jpg",
+    desc: "Inspired by the life of Silk Smitha, a South Indian actress known for bold roles, this film portrays the rise and fall of a woman who dared to challenge social norms.",
+    director: "Milan Luthria",
+    writers: ["Rajat Arora"],
+    stars: ["Vidya Balan", "Emraan Hashmi", "Naseeruddin Shah"]
+  },
+  {
+    id: 3,
+    title: "Wake Up Sid",
+    year: 2008,
+    type: "Motivational",
+    price: 90,
+    category: "Underrated",
+    image: "https://upload.wikimedia.org/wikipedia/en/9/9f/Wake_up_Sid.jpg",
+    desc: "A coming-of-age story about a privileged young man discovering purpose and responsibility as he learns to live on his own terms in Mumbai.",
+    director: "Ayan Mukerji",
+    writers: ["Ayan Mukerji", "Niranjan Iyengar"],
+    stars: ["Ranbir Kapoor", "Konkona Sen Sharma", "Anupam Kher"]
+  },
+  {
+    id: 4,
+    title: "Dangal",
+    year: 2016,
+    type: "Wrestling",
+    price: 180,
+    category: "Underrated",
+    image: "https://upload.wikimedia.org/wikipedia/en/9/99/Dangal_Poster.jpg",
+    desc: "Based on a true story, a former wrestler trains his daughters to become world-class wrestlers, breaking gender norms and bringing glory to the nation.",
+    director: "Nitesh Tiwari",
+    writers: ["Nitesh Tiwari", "Piyush Gupta", "Shreyas Jain", "Nikhil Mehrotra"],
+    stars: ["Aamir Khan", "Fatima Sana Shaikh", "Sanya Malhotra"]
+  },
+  {
+    id: 5,
+    title: "Ratsasan",
+    year: 2018,
+    type: "Thriller",
+    price: 150,
+    category: "Underrated",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8swkuBBoHlaKlxiMecTQ4cdBRWi0_joduEw&s",
+    desc: "A gripping psychological thriller about a cop chasing a serial killer who targets schoolgirls. Twists and intense suspense keep you on the edge of your seat.",
+    director: "Ram Kumar",
+    writers: ["Ram Kumar"],
+    stars: ["Vishnu Vishal", "Amala Paul", "Saravanan"]
+  },
+  {
+    id: 6,
+    title: "Dashing Detective",
+    year: 2019,
+    type: "Crime",
+    price: 150,
+    category: "Underrated",
+    image: "https://m.media-amazon.com/images/S/pv-target-images/c4b23ecc694855e200e31e3ffc368bb565de8ac2f641a4a3ecfda6363233faf7.jpg",
+    desc: "A smart and witty detective unravels a complex web of crime and deceit while facing personal demons in a high-stakes case.",
+    director: "Unknown",
+    writers: ["Unknown"],
+    stars: ["Unknown"]
+  },
+  {
+    id: 7,
+    title: "Ramaiya Vastavaiya",
+    year: 2013,
+    type: "Love",
+    price: 130,
+    category: "Underrated",
+    image: "https://stat4.bollywoodhungama.in/wp-content/uploads/2016/03/74637298.jpg",
+    desc: "A rich young man falls in love with a humble village girl, but must win her family's respect by adapting to rural life in this romantic drama.",
+    director: "Prabhu Deva",
+    writers: ["Veeru Potla", "Farhad-Sajid"],
+    stars: ["Girish Kumar", "Shruti Haasan", "Sonu Sood"]
+  },
+  {
+    id: 8,
+    title: "3 BHK",
+    year: 2024,
+    type: "Family",
+    price: 130,
+    category: "Most Watched",
+    image: "https://m.media-amazon.com/images/M/MV5BZTU0ODU1MjgtZmY0OC00Njc2LWFhY2YtZWU2MDk1YThkMzkxXkEyXkFqcGc@._V1_.jpg",
+    desc: "A heartfelt story of a middle-class family moving into a dream home, only to discover that true comfort lies in emotional bonds rather than material spaces. A touching portrayal of relationships and aspirations.",
+    director: "Vikram Mehra",
+    writers: ["Anjali Nair", "Vikram Mehra"],
+    stars: ["Neena Gupta", "Rajkummar Rao", "Amrita Subhash"]
+  },
+];
+
+export default UnderratedMovies;

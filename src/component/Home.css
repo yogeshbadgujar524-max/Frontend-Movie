@@ -1,0 +1,228 @@
+.home-img{
+    height:600px;
+    width:1500px;
+    transform: rotateY(180deg);
+}
+.home-img img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    bottom: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.29;
+    border-radius: 10px;
+}
+.contains{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:-70px;
+    right: 350px;
+    z-index: 20;
+}
+.contains h3{
+    font-size: 45px;
+}
+.contains h6{
+    position: absolute;
+    top:180px;
+    left: 450px;
+    font-size: 15px;
+    opacity: 0.5;
+    
+}
+.contains span{
+    color:peru;
+    opacity: 0.89;
+}
+.book-btn button{
+    height: 60px;
+    width: 220px;
+    position: relative;
+    top:-40px;
+    left: 100px;
+    background-color: #cd8c10;
+    color: black;
+    z-index: 10;
+}
+.book-btn .btn2{
+    margin-left: 80px;
+    bottom: 200px;
+    background-color: #1e1f26;
+    color: aliceblue;
+    border:2px solid yellowgreen;
+}
+.book-btn button:hover{
+    opacity: 0.5;
+    background-color:aqua;
+}
+.book-btn .btn2 a{
+    color: white;
+}
+.book-btn .btn2:hover{
+    color: black;
+}
+.book-btn button a{
+    text-decoration: none;
+    color: black;
+}
+.line{
+    height: 0px;
+    width: 1500px;
+    background-color: transparent;
+    border: 3px dotted white;
+    position: relative;
+    bottom: 500px;
+    opacity: 0.2;
+}
+.boxes{
+    display: flex;
+    height: 200px;
+    width: 1400px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 500px;
+}
+.box{
+    height: 55%;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    background-color:black;
+    color: white;
+    margin:10px;
+    margin-left: 70px;
+}
+.box p{
+    color: gray;
+    font-weight: 550;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.box p:hover{
+    color: #cd8c10;
+}
+.box h3{
+    font-size: larger;
+    margin-left: 20px;
+}
+.Home-movies{
+    height: 700px;
+    width:1300px;
+    position: relative;
+    bottom: 450px;
+}
+.home-main-movie{
+    height: 490px;
+    width: 1500px;
+}
+.home-main-movie img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.86;
+    border-radius: 10px;
+}
+.black{
+    background-color: black;
+    height: 490px;
+    width: 700px;
+    position: relative;
+    bottom:496px;
+    left: 800px;
+    opacity: 0.16;
+    border: none;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.home-main-movie h2{
+    color: aliceblue;
+    font-size: 70px;
+    position: relative;
+    bottom: 990px;
+    left: 850px;
+}
+.home-main-movie p{
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    position: relative;
+    bottom: 900px;
+    left: 850px;
+    z-index: 10;
+}
+.home-main-movie span{
+    color: #cd8c10;
+    font-size: x-large;
+    position: relative;
+    top:100px
+}
+.home-main-movie .dir marquee{
+    background-color:black;
+    position: relative;
+    bottom: 800px;
+    width: 1500px;
+    height: 30px;
+    color: red;
+    text-align: center;
+    font-size: larger;
+}
+
+.h-movies{
+    height: 500px;
+    width: 1500px;
+    display: flex;
+    text-align: center;
+    border-radius: 20px;
+}
+.movie{
+    height: 450px;
+    width: 400px;
+    margin: 20px;
+}
+.movie img{
+    height: 100%;
+    width:100%;
+    border-radius: 10px;
+}
+.movie img:hover{
+  transform:scale(1.05);
+  transition: 1s;
+}
+.h-movies h3{
+    font-size: 30px;
+    margin-top: 10px;
+    color: antiquewhite;
+}
+.h-movies p{
+    font-size: 20px;
+    margin-top: -30px;
+    color: aquamarine;
+}
+.home .btn{
+    position: relative;
+    bottom: 50px;
+    left: 500px;
+    height: 70px;
+    width:250px;
+    font-size: x-large;
+    border-radius: 25px;
+    border: none;
+    background:gray;
+    color: black;
+}
+.home .btn a{
+    text-decoration: none;
+    color: #1e1f26;
+}
+.home .btn:hover{
+    opacity: 0.8;
+    background-color: #cd8c10;
+}

@@ -1,0 +1,290 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 50px;
+    height: auto;
+    width: auto;
+}
+.tickets{
+    width: 550px;
+    height: fit-content;
+    border-radius: 8px;
+    padding: 16px;
+    background: white;
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.radio {
+  display: block;
+  margin: 15px 0;
+  font-size: 15px;
+  cursor: pointer;
+}
+.ticket-selector{
+    background: rgb(243, 243, 222);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 8px;
+}
+.title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.seats{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.status{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.items{
+    font-size: 16px;
+    position: relative;
+}
+.items::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left:-20px;
+    transform: translate(0,-50%);
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255,255,255);
+    outline: 1px solid rgb(120,120,120);
+    border-radius: 1px;
+}
+.items:nth-child(2)::before{
+    background-color: rgb(180,180,180);
+    outline: none;
+}
+.items:nth-child(3)::before{
+    background-color: #47a3ff;
+    outline: none;
+}
+.all-seats{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-gap: 6px;
+    margin: 60px 0px;
+    margin-top: 20px;
+    position: relative;
+}
+/* Hide the default checkbox */
+input[type='checkbox'][name='tickets'] {
+  display: none;
+}
+
+
+/* Style the label as the seat */
+.seat {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin: 5px;
+  background: white;
+  border: 1px solid rgb(180,180,180);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/* Booked seats look different */
+.seat.booked {
+  background: gray;
+  cursor: not-allowed;
+}
+
+/* Selected seat (when checkbox is checked) */
+input[type='checkbox'][name='tickets']:checked + .seat {
+  background-color: #47a3ff;
+}
+.seats::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 350px;
+    height: 7px;
+    background-color: rgb(130,198,255);
+    border-radius: 0 0 4px 4px;
+    border-top: 1px solid rgb(180,180,180);
+}
+.screentext{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.mode{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    right: 180px;
+    top:-50px;
+}
+.mode select{
+    position: relative;
+    top:50px;
+    left: 300px;
+    width: 120px;
+    height: 30px;
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+}
+.mode select:focus{
+    border: 2px solid darkgoldenrod;
+}
+.mode select option{
+    color: wheat;
+    background-color:black;
+}
+.date-time{
+    height: 100px;
+    width: 150px;
+}
+.date-time input{
+    position: relative;
+    bottom:75px;
+    left: -30px;
+    position: relative;
+    width: 150px;
+    height: 30px;
+    color:black;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 10px;   
+    border: none;
+}
+.date-time input:focus{
+    border: 2px solid darkgoldenrod;
+}
+.date-time p{
+    position: relative;
+    right: 150px;
+    bottom: 30px;
+    font-size: large;
+    font-weight: 550;
+}
+.date-time select{
+    position: relative;
+    bottom: 100px;
+    left: -20px;
+    font-size: large;
+    border: 1px solid black;
+    border-radius: 10px;
+    border: none;
+}
+.date-time select:focus{
+    border: 2px solid darkgoldenrod;
+}
+.showtime p{
+    position: relative;
+    bottom: 60px;
+}
+.date-time select option{
+    color: wheat;
+    background-color:black;
+}
+.date-time input:focus{
+    border: 2px solid darkgoldenrod;
+}
+.count{
+    position: relative;
+    top: 30px;
+    right: 1px;
+}
+.price{
+    position: relative;
+    top:40px;
+    right: 1px;
+}
+.BTN:hover{
+    opacity: 0.8;
+    background-color:orangered;
+    transition: 0.4s;
+    
+}
+.Booking-Ticket{
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    left: 100px;
+    bottom: 20px;
+    height: 325px;
+    width: 300px;
+    background-color:rgba(220, 220, 220, 0.897);
+    color: black;
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+.Booking-Ticket select{
+    position: relative;
+    top:50px;
+    left: 20px;
+    width: 200px;
+    height: 30px;
+    color: darkblue;
+    font-weight: 600;
+    font-size: large;
+    border-radius: 10px;
+}
+.Booking-Ticket select:focus{
+    border: 2px solid darkgoldenrod;
+}
+.Booking-Ticket select option{
+    color: wheat;
+    background-color:black;
+}
+.Booking-Ticket h2{
+    margin-left: 50px;
+}
+.Booking-Ticket .count{
+    position: relative;
+    left: 20px;
+    font-size: x-large;
+}
+.Booking-Ticket .price{
+    position: relative;
+    left: 20px;
+    font-size: x-large;
+}
+.Booking-Ticket .BTN{
+    position: relative;
+    left:40px;
+    top: 80px;
+    height: 40px;
+    width: 200px;
+    background-color:black;
+    color: wheat;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+}
+.process{
+    margin-top: 100px;
+    margin-left: 100px;
+    font-size: larger;
+    color:black;
+    font-weight: 550;
+    display: none;
+}

@@ -1,0 +1,205 @@
+
+.head{
+    height: 70px;
+    width:100%;
+}
+nav{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 10;
+}
+.change{
+    background-color: black;
+    transition: 2s;
+    height:70px;
+}
+nav ul{
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    margin-right:700px;
+}
+.admin{
+    display: flex;
+    position: relative;
+    left: 200px;
+    margin: -100px;
+    gap: 100px;
+}
+.admin li{
+    position: relative;
+    left: 30px;
+    gap: 20px;
+}
+nav ul{
+    font-size: large;
+    color: #f9a825;
+    gap:1px;
+}
+nav ul li{
+    list-style: none;
+    padding:2px;
+    color:black;
+    margin-top: -20px;
+}
+nav ul li a{
+    position: relative;
+    bottom: -3px;
+    right: 80px;
+}
+nav ul h2{
+    position: relative;
+    top: 30px;
+    right: 80px;
+}
+nav ul li a:hover{
+    color: orangered;
+}
+.active{
+    color: orangered;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#adadad;
+    font-size: large;
+    padding-left: -30px;
+    font-weight: 500;
+}
+nav ul h2{
+    margin-top: 10px;
+    position: relative;
+    top: 1px;
+}
+
+.drop-down {
+  position: absolute;
+  top: 100%; /* Directly below the parent */
+  left: 0;
+  background-color: black;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  z-index: 999;
+  display: block;
+  min-width: 160px; /* Adjust width as needed */
+  border-radius:15px ;
+}
+
+
+.dropdown-parent {
+  position: relative;
+  display: block;
+}
+
+.dropdown-parent .drop-down {
+  display: block; /* this is handled by conditionally rendering in JSX */
+}
+
+.dropdown-parent .drop-down i:hover{
+    display: block;
+}
+.drop-down ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.drop-down li {
+  padding: 25px;
+  cursor: pointer;
+  color: #adadad;
+  display: block;
+  width: 120px;
+  height: 20px;
+}
+
+.drop-down li:hover {
+  color:black;
+  background-color: #adadad;
+}
+
+.para1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -85px;
+    margin-left: 1000px;
+    gap: 6px;
+    color:#adadad;
+}
+.para1 i{
+    color: antiquewhite;
+}
+.login{
+    margin-left: -15px;
+    position: relative;
+    top: 2px;
+    right: 15px;
+}
+.loginvis{
+    height: 10px;
+    font-size: 22px;
+}
+.loginvis a:hover{
+    color: green;
+}
+.login .logout {
+    font-size: 18px;
+    width: 60px;
+    background-color: #1e1f26;
+    position: relative;
+    bottom: 20px;
+}
+
+.login p:hover{
+    color: #f9a825;
+}
+.logout{
+    height: 35px;
+}
+.user{
+    position: relative;
+    left:1290px; 
+    bottom: 50px;   
+    color: #adadad;
+    font-size: 25px;
+}
+.user a {
+    text-decoration: none;
+    color:gainsboro;
+}
+.user:hover{
+    opacity: 0.6;
+}
+.map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 300px;
+    margin-left: 1130px;
+    margin-top: -135px;
+    gap: 6px;
+    position: relative;
+    top:35px;
+    right: 18px;
+    color:#adadad;
+    font-size: 20px;
+}
+.login a{
+    margin-right: -100px;
+    text-decoration: none;
+    color:wheat;
+    font-size: larger;
+}
+.login i:hover{
+    color:blueviolet;
+    font-size: 18px;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+.border:hover{
+    opacity: 0.5;
+    border:2px;   
+    cursor: pointer;
+}
