@@ -46,15 +46,20 @@ function Home({ isLoggedIn }) {
   }
   return (
     <>
+    <div style={{background:"#111",position:"relative",bottom:"150px"}}>
       <div className='home'>
         <div className='contains'>
           <h3>SECURE SEATES ,<br /> BOOK ALL TICKETS <br /><span>EFFORTLESSLLY</span></h3>
           <h6>Unlock unfogettable advanture with our easy to use ticket booking platform,where convenience meets choices <br />for every journey and events and make sure your intrested to watching the best movies</h6>
         </div>
-        <div className='book-btn'>
+        <motion.div
+                      initial={{ y: 50, opacity: 0 }}
+                      whileInView={{ y: 0, opacity: 1 }}
+                      viewport={{ once: true, amount: 0.2 }}
+                      transition={{ duration: 0.8, type: "spring", stiffness: 20 }} className='book-btn'>
           <button><a href='Movies'>Book Now</a></button>
           <button className='btn2'><Link to='Contact'>Contact Us</Link></button>
-        </div>
+        </motion.div>
         <div className='home-img'>
           <img src='https://media.istockphoto.com/id/1401019613/photo/movie-tickets-online-booking-app.jpg?s=612x612&w=0&k=20&c=qre7CchnzXeLh72GXH3sOiPvNKX2aNoxEIHV1DM9lwI='></img>
         </div>
@@ -127,6 +132,7 @@ function Home({ isLoggedIn }) {
           </motion.div>
         </div>
         <button className='btn' onClick={movie}>See More....</button>
+      </div>
       </div>
     </>
   )
