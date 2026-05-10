@@ -57,7 +57,7 @@ function Home({ isLoggedIn }) {
                       whileInView={{ y: 0, opacity: 1 }}
                       viewport={{ once: true, amount: 0.2 }}
                       transition={{ duration: 0.8, type: "spring", stiffness: 20 }} className='book-btn'>
-          <button><a href='Movies'>Book Now</a></button>
+          <button><Link to = "Movies">Book Now</Link></button>
           <button className='btn2'><Link to='Contact'>Contact Us</Link></button>
         </motion.div>
         <div className='home-img'>

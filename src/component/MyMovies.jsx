@@ -96,8 +96,8 @@ function MyMovies() {
             }}
           >
             No movies booked yet.
-            <a
-              href="/Movies"
+            <Link
+              to ="/Movies"
               style={{
                 textDecoration: "none",
                 position: "relative",
@@ -110,7 +110,7 @@ function MyMovies() {
               <span style={{ color: "yellowgreen", fontWeight: "lighter" }}>
                 Here
               </span>
-            </a>
+            </Link>
           </p>
         ) : (
           bookedMovies.map((movie, index) => (
