@@ -6,7 +6,7 @@ const UserQueries = () => {
 
   useEffect(() => {
      axios
-      .get('http://localhost:3001/contact')
+      .get('https://backend-movie-jade.vercel.app/contact')
       .then((res) => {
         console.log("Fetched users from MongoDB:", res.data);
         setContacts(res.data);

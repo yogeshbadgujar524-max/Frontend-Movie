@@ -41,7 +41,7 @@ const generatedUserId = () => {
   };
 
   try {
-    await axios.post('http://localhost:3001/register', newUser);
+    await axios.post('https://backend-movie-jade.vercel.app/register', newUser);
 
     Swal.fire({
       position: "center",
