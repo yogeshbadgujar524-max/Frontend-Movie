@@ -68,7 +68,10 @@ function Movies({ isLoggedIn }) {
   let tx = 0;
 
 
+  const isMobile = window.innerWidth <= 900;
+
   const SlideForward1 = () => {
+    if(isMobile) return;
     if (tx > -48) {
       tx -= 14;
     }
@@ -78,6 +81,7 @@ function Movies({ isLoggedIn }) {
   }
 
   const SlideBackward1 = () => {
+    if(isMobile) return;
     if (tx < 0) {
       tx += 15;
     }
@@ -86,6 +90,7 @@ function Movies({ isLoggedIn }) {
   }
 
   const SlideForward2 = () => {
+    if(isMobile) return;
     if (tx > -50.1) {
       tx -= 12;
     }
@@ -94,6 +99,7 @@ function Movies({ isLoggedIn }) {
   }
 
   const SlideBackward2 = () => {
+    if(isMobile) return;
     if (tx < 0) {
       tx += 12;
     }
@@ -102,6 +108,7 @@ function Movies({ isLoggedIn }) {
   }
 
   const SlideForward3 = () => {
+    if(isMobile) return;
     if (tx > -16) {
       tx -= 15;
     }
@@ -110,6 +117,7 @@ function Movies({ isLoggedIn }) {
   }
 
   const SlideBackward3 = () => {
+    if(isMobile) return;
     if (tx < 0) {
       tx += 15;
     }
@@ -125,6 +133,7 @@ function Movies({ isLoggedIn }) {
 
   return (
     <>
+    <div className="movie-layout">
       <div className="searchbar">
         <input
           type="text"
@@ -221,6 +230,8 @@ function Movies({ isLoggedIn }) {
                 <button className='btn'>Apply</button>
               </div>
             </form>
+
+            <div className="content-section">
             <div className="main-movie">
               <div className='img'>
                 {bhootbanglow}
@@ -259,12 +270,11 @@ function Movies({ isLoggedIn }) {
                   </div>
                   <h3 className='m-title'>{movie.title} <i>({movie.year})</i></h3>
                   <p className='type'>Type : {movie.type}</p>
-                  <p className='price'>₹ {movie.price}</p>
                   <p hidden>{movie.desc}</p>
                   <p hidden>{movie.director}</p>
                   <p hidden>{movie.writers}</p>
                   <p hidden>{movie.stars}</p>
-                  <button className='booking'><Link to={`/movie/trending/${movie.id}`}>Book Now</Link>
+                  <button className='booking'><Link to={`/movie/trending/${movie.id}`}>Book Now <span style={{color:"red"}}>₹{movie.price}</span></Link>
                   </button>
                 </div>
               ))}
@@ -297,12 +307,11 @@ function Movies({ isLoggedIn }) {
                   </div>
                   <h3 className='m-title'>{movie.title} <i>({movie.year})</i></h3>
                   <p className='type'>Type : {movie.type}</p>
-                  <p className='price'>₹ {movie.price}</p>
                   <p hidden>{movie.desc}</p>
                   <p hidden>{movie.director}</p>
                   <p hidden>{movie.writers}</p>
                   <p hidden>{movie.stars}</p>
-                  <button className='booking'><Link to={`/movie/mostwatched/${movie.id}`}>Book Now</Link>
+                  <button className='booking'><Link to={`/movie/mostwatched/${movie.id}`}>Book Now <span style={{color:"red"}}>₹{movie.price}</span></Link>
                   </button>
                 </div>
               ))}
@@ -333,13 +342,11 @@ function Movies({ isLoggedIn }) {
                     <img src={movie.image} alt={movie.title} />
                   </div>
                   <h3 className='m-title'>{movie.title} <i>({movie.year})</i></h3>
-                  <p className='type'>Type : {movie.type}</p>
-                  <p className='price'>₹ {movie.price}</p>
                   <p hidden>{movie.desc}</p>
                   <p hidden>{movie.director}</p>
                   <p hidden>{movie.writers}</p>
                   <p hidden>{movie.stars}</p>
-                  <button className='booking'><Link to={`/movie/underrated/${movie.id}`}>Book Now</Link>
+                  <button className='booking'><Link to={`/movie/underrated/${movie.id}`}>Book Now <span style={{color:"red"}}>₹{movie.price}</span></Link>
 
                   </button>
 
@@ -348,6 +355,7 @@ function Movies({ isLoggedIn }) {
               ))}
             </motion.div>
           </div>
+      </div>
         </>
       }
       {/* {play &&
@@ -355,8 +363,23 @@ function Movies({ isLoggedIn }) {
   <VideoPlayer/>
   </div>
   } */}
-      {play &&
-        <VideoPlayer onClose={() => setPlay(false)} />}
+      {play && (
+  <div className="video-overlay">
+    <div className="video-container">
+
+      <button
+        className="close-video"
+        onClick={() => setPlay(false)}
+      >
+        ✕
+      </button>
+
+      <VideoPlayer />
+
+    </div>
+  </div>
+)}
+        </div>
     </>
   )
 }
