@@ -6,7 +6,7 @@ function AdminBookings() {
 
   useEffect(() => {
     axios
-      .get('https://backend-movie-jade.vercel.app/booking')
+      .get('https://backend-movie-y559.vercel.app//booking')
       .then((res) => {
         console.log("Fetched users from MongoDB:", res.data);
         setBookings(res.data);
