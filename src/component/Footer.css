@@ -30,10 +30,11 @@
     flex-direction: column;
     position: relative;
     left: -2px;
+    top:20px;
 }
 .foot2 h5{
     position: relative;
-    bottom:10px;
+    bottom:5px;
     font-size: larger;
     margin-left: 450px;
 }

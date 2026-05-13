@@ -46,7 +46,7 @@ function Home({ isLoggedIn }) {
   }
   return (
     <>
-    <div style={{background:"#111",position:"relative",bottom:"150px"}}>
+    <div style={{background:"#111",position:"relative",bottom:"165px"}}>
       <div className='home'>
         <div className='contains'>
           <h3>SECURE SEATES ,<br /> BOOK ALL TICKETS <br /><span>EFFORTLESSLLY</span></h3>
