@@ -35,7 +35,7 @@ function AdminDashboard() {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          await axios.delete(`https://backend-movie-ac46twv6r-yogeshbadgujar524-maxs-projects.vercel.app/register/${id}`);
+          await axios.delete(`https://backend-movie-jade.vercel.app/register/${id}`);
           Swal.fire({
             title: "Deleted!",
             text: "User has been deleted.",

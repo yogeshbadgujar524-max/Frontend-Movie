@@ -30,7 +30,7 @@ function Login({ onLogin }) {
       }
     } else {
       try {
-        const res = await axios.post('https://backend-movie-ac46twv6r-yogeshbadgujar524-maxs-projects.vercel.app/login', { email, password });
+        const res = await axios.post('https://backend-movie-jade.vercel.app/login', { email, password });
 
         if (res.data && res.data.email) {
           localStorage.setItem('isLoggedIn', 'true');
