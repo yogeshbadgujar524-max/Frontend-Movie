@@ -35,7 +35,7 @@ function MyMovies() {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          await axios.delete(`https://backend-movie-jade.vercel.app/${bookingId}`);
+          await axios.delete(`https://backend-movie-ac46twv6r-yogeshbadgujar524-maxs-projects.vercel.app/${bookingId}`);
           cancelBooking(index);
 
           Swal.fire({

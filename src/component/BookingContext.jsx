@@ -13,7 +13,7 @@ export const BookingProvider = ({ children }) => {
     const email = localStorage.getItem("email");
     if (!email) return;
 
-    axios.get(`https://backend-movie-y559.vercel.app/booking/user/${email}`)
+    axios.get(`https://backend-movie-ac46twv6r-yogeshbadgujar524-maxs-projects.vercel.app/user/${email}`)
       .then(res => setBookedMovies(res.data))
       .catch(err => console.log(err));
   }, []);
