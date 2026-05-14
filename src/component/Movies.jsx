@@ -161,11 +161,10 @@ function Movies({ isLoggedIn }) {
                   </h3>
 
                   <p className='type'>Type : {movie.type}</p>
-                  <p className='price'>₹ {movie.price}</p>
 
                   <button className='booking'>
                     <Link to={`/movie/${movie.category.toLowerCase().replace(" ", "")}/${movie.id}`}>
-                      Book Now
+                      Book Now <span style={{color:"red"}}>₹{movie.price}</span>
                     </Link>
                   </button>
                 </div>

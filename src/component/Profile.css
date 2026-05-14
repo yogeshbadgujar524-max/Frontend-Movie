@@ -6,6 +6,174 @@
   margin-top: 25px !important;
 }
 
+/* My Movies.jsx */
+.main-movies {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.page-title {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.empty-box {
+  text-align: center;
+  color: orange;
+  font-size: 24px;
+}
+
+.book-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: yellowgreen;
+  font-size: 20px;
+}
+
+.movie-card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: #D8A4A5;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+.movie-image {
+  width: 150px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.movie-content {
+  flex: 1;
+}
+
+.movie-content h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.booking-id {
+  color: darkblue;
+  font-weight: bold;
+}
+
+.price {
+  color: darkgreen;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.cancelbtn {
+  padding: 10px 20px;
+  border: none;
+  background: crimson;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.details-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  z-index: 999;
+}
+
+.details-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  max-width: 600px;
+  transform: translate(-50%, -50%);
+  background: gray;
+  padding: 25px;
+  border-radius: 15px;
+  z-index: 1000;
+  color: white;
+}
+
+.details-popup h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.details-popup p {
+  margin: 12px 0;
+  font-size: 18px;
+}
+
+.email {
+  color: red;
+  margin-left: 10px;
+}
+
+.close-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  background: red;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ================= MOBILE ================= */
+
+@media screen and (max-width: 768px) {
+
+  .page-title {
+    font-size: 28px;
+  }
+
+  .movie-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .movie-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  .movie-content h2 {
+    font-size: 24px;
+  }
+
+  .details-popup {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .details-popup p {
+    font-size: 16px;
+  }
+}
+
+
 .cancelbtn{
     position:relative;
     height:45px;
@@ -141,6 +309,7 @@
 .action-btn {
   background-color: #e50914;
   color: #fff;
+  width: fit-content;
   border: none;
   padding: 12px 15px;
   border-radius: 8px;

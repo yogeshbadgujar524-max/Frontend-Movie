@@ -11,7 +11,7 @@ function AdminDashboard() {
   // Fetch users
   const fetchUsers = async () => {
     try {
-      const res = await axios.get("https://backend-movie-y559.vercel.app//register");
+      const res = await axios.get("https://backend-movie-vvyk.vercel.app/register");
       setUsers(res.data);
     } catch (err) {
       console.error("Error fetching users:", err);

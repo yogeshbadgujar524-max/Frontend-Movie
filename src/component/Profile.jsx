@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation} from "react-router-dom";
 import Swal from "sweetalert2";
 import "./Profile.css";
 import { BookingContext } from "./BookingContext";
