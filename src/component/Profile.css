@@ -7,192 +7,253 @@
 }
 
 /* My Movies.jsx */
+/* MAIN */
 .main-movies {
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 120px 30px 50px;
+  color: white;
+  background: #0f172a;
+  margin-top: -180px;
 }
 
+/* TITLE */
 .page-title {
   text-align: center;
-  color: white;
-  font-size: 40px;
-  margin-bottom: 40px;
+  font-size: 42px;
+  margin-bottom: 50px;
+  color: #ffcc00;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
+/* EMPTY BOX */
 .empty-box {
+  max-width: 500px;
+  margin: auto;
+  background: rgba(255,255,255,0.08);
+  padding: 40px;
+  border-radius: 20px;
   text-align: center;
-  color: orange;
-  font-size: 24px;
+  backdrop-filter: blur(10px);
+}
+
+.empty-box p {
+  font-size: 22px;
+  margin-bottom: 20px;
 }
 
 .book-link {
-  display: inline-block;
-  margin-top: 20px;
   text-decoration: none;
-  color: yellowgreen;
-  font-size: 20px;
+  background: #ffcc00;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
+.book-link:hover {
+  background: white;
+}
+
+/* MOVIE CARD */
 .movie-card {
   display: flex;
-  gap: 20px;
-  align-items: center;
-  background: #D8A4A5;
+  gap: 25px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  margin-bottom: 30px;
+  margin: 50px;
   border-radius: 20px;
+  overflow: hidden;
   padding: 20px;
-  margin: 20px auto;
-  max-width: 900px;
   cursor: pointer;
-  flex-wrap: wrap;
+  transition: 0.4s ease;
+  backdrop-filter: blur(12px);
 }
 
+.movie-card:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* IMAGE */
 .movie-image {
-  width: 150px;
-  height: 180px;
+  width: 230px;
+  height: 320px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
+/* CONTENT */
 .movie-content {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .movie-content h2 {
-  font-size: 32px;
-  margin-bottom: 10px;
+  font-size: 34px;
+  margin-bottom: 20px;
+  color: #ffcc00;
+}
+
+.movie-content p {
+  font-size: 19px;
+  margin: 10px 0;
+  color: #e2e8f0;
 }
 
 .booking-id {
-  color: darkblue;
-  font-weight: bold;
+  color: #38bdf8;
+  font-weight: 600;
 }
 
 .price {
-  color: darkgreen;
-  font-size: 20px;
+  color: #22c55e;
+  font-size: 24px !important;
   font-weight: bold;
 }
 
+/* STATUS */
 .status {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin: 15px 0;
+  margin-top: 20px;
 }
 
+.status span {
+  color: #4ade80;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* CANCEL BUTTON */
 .cancelbtn {
-  padding: 10px 20px;
+  margin-top: 25px;
+  width: 220px;
+  padding: 14px;
   border: none;
-  background: crimson;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ef4444, #dc2626);
   color: white;
-  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 600;
   cursor: pointer;
+  transition: 0.3s;
 }
 
+.cancelbtn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #dc2626, #b91c1c);
+}
+
+/* POPUP OVERLAY */
 .details-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.8);
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(5px);
   z-index: 999;
 }
 
+/* POPUP */
 .details-popup {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 90%;
-  max-width: 600px;
+  width: 500px;
+  max-width: 95%;
   transform: translate(-50%, -50%);
-  background: gray;
-  padding: 25px;
-  border-radius: 15px;
-  z-index: 1000;
+  background: #111827;
   color: white;
+  padding: 35px;
+  border-radius: 25px;
+  z-index: 1000;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+  animation: popup 0.3s ease;
+}
+
+@keyframes popup {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -45%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .details-popup h2 {
-  text-align: center;
-  margin-bottom: 20px;
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #ffcc00;
 }
 
 .details-popup p {
-  margin: 12px 0;
+  margin: 15px 0;
   font-size: 18px;
+  line-height: 1.6;
 }
 
 .email {
-  color: red;
-  margin-left: 10px;
+  color: #38bdf8;
+  margin-left: 8px;
+  font-weight: bold;
 }
 
+/* CLOSE BUTTON */
 .close-btn {
   width: 100%;
-  margin-top: 20px;
-  padding: 12px;
+  margin-top: 25px;
+  padding: 14px;
   border: none;
-  background: red;
-  color: white;
-  border-radius: 8px;
+  border-radius: 12px;
+  background: #ffcc00;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-/* ================= MOBILE ================= */
+.close-btn:hover {
+  background: white;
+  transform: scale(1.02);
+}
 
-@media screen and (max-width: 768px) {
-
-  .page-title {
-    font-size: 28px;
-  }
-
+/* RESPONSIVE */
+@media (max-width: 768px) {
   .movie-card {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
   .movie-image {
     width: 100%;
-    max-width: 250px;
     height: auto;
   }
 
   .movie-content h2 {
-    font-size: 24px;
+    font-size: 28px;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+
+  .page-title {
+    font-size: 32px;
   }
 
   .details-popup {
-    width: 95%;
-    padding: 20px;
-  }
-
-  .details-popup p {
-    font-size: 16px;
+    padding: 25px;
   }
 }
-
-
-.cancelbtn{
-    position:relative;
-    height:45px;
-    width:160px;
-    bottom: 160px;
-    left:305px;
-    background-color:red;
-    color:white;
-}
-.cancelbtn:hover{
-    opacity: 0.6;
-    background-color: blue;
-    font-weight: 600;
-}
-.mbutton:hover{
-  opacity: 0.5;
-  border: 2px solid wheat;
-}
-
 
 /*User Details*/
 .user:hover{

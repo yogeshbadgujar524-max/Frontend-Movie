@@ -126,10 +126,7 @@ const cancelBooked = async (index) => {
                   Total Paid : ₹{movie.totalPrice}
                 </p>
 
-                <div className="status">
-                  <input type="checkbox" checked readOnly />
-                  <span>Completed</span>
-                </div>
+                
 
                 <button
                   className="cancelbtn"
