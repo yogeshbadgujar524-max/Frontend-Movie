@@ -393,6 +393,7 @@ function SeatBooking() {
                 }}
               >
                 <h2>OTP Authentications : </h2>
+                <div style={{margin:"20px"}}>
 
                 <h3>Phone Number : </h3>
                 <input type="tel" placeholder="Phone No" ref={mobileno} required style={{
@@ -402,7 +403,7 @@ function SeatBooking() {
                   borderRadius: "5px", margin: "10px 0"
                 }} /><br></br>
 
-                <input type="button" value="Generate OTP" name="OTP" onClick={otpgenerater} style={{ position: "relative", border: "1px solid #ccc", top: "15px", color: "black", backgroundColor: "yellowgreen", border: "none", borderRadius: "10px", width: "150px", height: "30px", fontWeight: "bold", margin: "10px 0", padding: "5px" }} />
+                <input type="button" value="Generate OTP" name="OTP" onClick={otpgenerater} style={{ position: "relative", border: "1px solid #ccc", color: "black", backgroundColor: "yellowgreen", border: "none", borderRadius: "10px", width: "150px", height: "30px", fontWeight: "bold", margin: "10px 0", padding: "5px" }} />
                 <h4 ref={sending} style={{ position: "relative", left: "20px" }}></h4>
                 <p ref={otpref} style={{ position: "relative", top: "25px" }}></p>
                 <br></br>
@@ -413,6 +414,7 @@ function SeatBooking() {
                   border: "1px solid #ccc",
                   borderRadius: "5px", margin: "10px 0"
                 }} required /><br></br><br></br>
+                </div>
                 <input type='submit' value="Submit" style={{ border: "none", borderRadius: "10px", width: "100px", height: "30px", backgroundColor: "black", color: "white" }} ref={Otp} />
               </div>
             </div>
@@ -478,7 +480,7 @@ function SeatBooking() {
               <div style={{
                 width: "35%",
                 borderRight: "1px solid #eee",
-                paddingRight: "20px"
+                paddingRight: "20px",
               }}>
                 <h4>Select Option</h4>
 
@@ -626,8 +628,8 @@ function SeatBooking() {
             border: "5px",
             boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)"
           }}>
-            <h3>Your Movie Details : </h3>
-
+            <h3 style={{position:"relative",left:"70px"}}>Your Movie Details : </h3>
+            <div style={{margin:"20px",padding:"10px"}}>
             <i className="fa-solid fa-film"></i> Movie : {title}<br /><br />
             <i className="fa-solid fa-chair"></i> Total Seats : {selectedSeats}<br /><br />
             <i className="fa-solid fa-ticket"></i> Show Tickets : {count}<br /><br />
@@ -643,6 +645,7 @@ function SeatBooking() {
               border: "1px solid #ccc",
               borderRadius: "5px", margin: "10px 0", marginLeft: "20px", background: "#5cb30c", color: "white", border: "none", cursor: "pointer"
             }} onClick={handledetails} />
+            </div>
           </div>
 
         </>

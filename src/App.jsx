@@ -120,7 +120,7 @@ useEffect(() => {
           path="/Profile"
           element={
             <ProtectedRoute isLoggedIn={isLoggedIn}>
-              <Profile />
+              <Profile isLoggedIn={isLoggedIn}/>
             </ProtectedRoute>
           }
         />

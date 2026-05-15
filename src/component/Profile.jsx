@@ -5,7 +5,7 @@ import "./Profile.css";
 import { BookingContext } from "./BookingContext";
 import Loading from "./Loading";
 
-function Profile({isLoading,setIsLoading}) {
+function Profile({isLoading,setIsLoading,isLoggedIn}) {
   const [showDetails, setShowDetails] = useState(false);
   const [mode, setMode] = useState("dark");
   const [showNotify,setShowNotify] = useState(false);
@@ -21,7 +21,6 @@ function Profile({isLoading,setIsLoading}) {
 
   useEffect(() => {
     setTimeout(() => {
-      
       setIsLoading(true)
     }, 3000);
   }, [isLoading])

@@ -162,10 +162,11 @@ input[type='checkbox'][name='tickets']:checked + .seat {
 .date-time{
     height: 100px;
     width: 150px;
+    padding: 10px;
 }
 .date-time input{
     position: relative;
-    bottom:75px;
+    bottom:68px;
     left: -30px;
     position: relative;
     width: 150px;
@@ -175,6 +176,7 @@ input[type='checkbox'][name='tickets']:checked + .seat {
     font-size: 15px;
     border-radius: 10px;   
     border: none;
+    margin: 10px;
 }
 .date-time input:focus{
     border: 2px solid darkgoldenrod;
@@ -188,7 +190,7 @@ input[type='checkbox'][name='tickets']:checked + .seat {
 }
 .date-time select{
     position: relative;
-    bottom: 100px;
+    bottom: 80px;
     left: -20px;
     font-size: large;
     border: 1px solid black;
@@ -214,10 +216,9 @@ input[type='checkbox'][name='tickets']:checked + .seat {
     top: 30px;
     right: 1px;
 }
-.price{
+.Booking-Ticket .price{
     position: relative;
     top:40px;
-    right: 1px;
 }
 .BTN:hover{
     opacity: 0.8;
@@ -256,7 +257,8 @@ input[type='checkbox'][name='tickets']:checked + .seat {
     background-color:black;
 }
 .Booking-Ticket h2{
-    margin-left: 50px;
+    margin-left: 30px;
+    margin-top: 20px;
 }
 .Booking-Ticket .count{
     position: relative;
@@ -266,7 +268,7 @@ input[type='checkbox'][name='tickets']:checked + .seat {
 .Booking-Ticket .price{
     position: relative;
     left: 20px;
-    font-size: x-large;
+    font-size: larger;
 }
 .Booking-Ticket .BTN{
     position: relative;

@@ -124,7 +124,7 @@ const prologgedin = localStorage.getItem("isLoggedIn");
           </div>
         </div>
 
-        {!isAdmin && (
+        {!isAdmin && isLoggedIn && (
           <>
             <div className="user">
               <Link to="/Profile">
