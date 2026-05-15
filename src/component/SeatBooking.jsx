@@ -59,7 +59,7 @@ function SeatBooking() {
     else {
       setShowotp(true);
       const useremail = localStorage.getItem("email");
-      axios.post('https://backend-movie-vvyk.vercel.app/Payment', { transactionId, Payment, totalPrice, email: useremail })
+      axios.post('https://backend-movie-vvyk.vercel.app/payment', { transactionId, Payment, totalPrice, email: useremail })
         .then(result => console.log(result))
         .catch(err => console.log(err))
 
